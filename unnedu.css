@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;1,500;1,600&family=Source+Sans+Pro:ital,wght@0,200;0,600;0,700;1,400;1,900&display=swap');
+*{
+    /* font-family: "Source Sans Pro","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+ */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 95%;
+
+}
+nav{
+    background:#387042;
+    width: 100%;
+
+}
+nav ul{
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+nav ul li{
+    list-style: none;
+    line-height: 30px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 8px 10px 8px 10px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    display: block;
+    transition:all 0.6s;
+
+}
+
+
+nav ul li a:hover{
+    background: white;
+    color: black;
+}
+nav ul li a .fa-user{
+    margin-right: 10px;
+    color: rgb(194, 190, 190);
+}
+nav ul li a .fa-angle-down{
+    margin: 0px 0px 0px 10px;
+}
+nav ul li:hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+nav ul li .active{
+    color: black;
+    padding: 8px 10px 8px 10px;
+
+}
+
+nav ul li .submenu{
+    position: relative;
+}
+nav ul li .submenu ul {
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    overflow: hidden;
+    display: none;
+ 
+}
+
+nav ul li .submenu ul li{
+    list-style: none;
+}
+nav ul li .submenu ul li a{
+    text-decoration: none;
+    text-decoration:none;
+    background: rgba(210, 207, 207, 0.929);
+    color:black ;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: .95rem;
+    transition: 0.3s;
+    animation: slide 0.3s linear forwards ;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 500;
+   
+}
+@keyframes  slide{
+    0%{
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-10px);
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+nav ul li .submenu ul li a:hover{
+    background: rgba(210, 207, 207, 0.929);
+    color: black;
+
+}
+
+nav ul li:hover .submenu ul{
+    display: block;
+}
+
+.main-login{
+    background: white;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-login .fastlogin{
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    padding: 10px;
+}
+.main-login .fastlogin h3{
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.main-login .fastlogin .form{
+    width: 100%;
+
+}
+
+.main-login .fastlogin .form  .input-field{
+    background: white;
+    width: 100%;
+    margin: 1rem 0rem 1.5rem 0rem;
+    
+}
+.main-login .fastlogin .form  .input-field input[type="text"]{
+    background: whitesmoke;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 9px 0px 9px 10px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+}
+.main-login .fastlogin .form  .input-field input[type="text"]:focus{
+    background: rgba(213, 208, 208, 0.664);
+}
+.main-login .fastlogin .form  .input-field input[type="text"]::placeholder{
+    font-size: 1.2rem;
+    padding: 0px 0px 0px 10px;
+    text-transform: capitalize;
+    font-size: 400;
+}
+.main-login .fastlogin .form .check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-login .fastlogin .form  .input-field input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+
+}
+.main-login .fastlogin .form .check .checkman{
+    display: flex;
+}
+.main-login .fastlogin .form .check p{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 0px 0px 0px 10px;
+}
+.main-login .fastlogin .form .check a{
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 1.2rem;
+   color: #5c80d1;
+   transition: 0.5s;
+   font-weight: 400;
+ 
+}
+.main-login .fastlogin .form .check a:hover{
+    color: black;
+}
+.main-login .fastlogin .form  .btnbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-login .fastlogin .form  .btnbutton .btn{
+    padding: 10px 15px 10px 15px;
+    text-transform: capitalize;
+    background: #5c80d1;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 15px 0px 10px 0px;
+}
+.main-login .hoster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-bottom: 2.3rem;
+}
+.main-login .hoster .image{
+    margin-right: 30px;
+}
+
+.main-login .hoster p{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.main-login .hoster p a{
+    text-decoration: none;
+    color: #5c80d1;
+       text-transform: none;
+}
+
+.main-login .support{
+    font-size: 1.3rem;
+}
+.main-login .support  a{
+    color: #5c80d1;
+    text-decoration: none;
+}
+.main-login .support  a:hover{
+    color: black;
+}
+
+ .copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    padding: 20px 0px 20px 0px;
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.752);
+    text-transform: capitalize;
+}
+.copyright img{
+    margin-left: 20px;
+   
+}
+.rightdesign{
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 1rem;
+
+}
+
+@media screen   and (max-width:1000px) {
+    .main-login .fastlogin{
+        width: 100%;
+        max-width: 500px;
+    }
+    .main-login .fastlogin .form  .input-field{
+        width: 100%;
+
+    }
+    .main-login .fastlogin .form  .btnbutton .btn{
+        width: 60%;
+    }
+
+
+}
+
+@media screen   and (max-width:700px) {
+    .main-login .fastlogin{
+        width: 100%;
+        max-width: 400px;
+    }
+    .main-login .fastlogin .form  .input-field{
+        width: 100%;
+
+    }
+    .main-login .fastlogin .form  .input-field input[type="text"]{
+        width: 100%;
+
+    }
+    .main-login .fastlogin .form  .btnbutton .btn{
+        width: 100%;
+    }
+    .main-login .hoster{
+        width: 90%;
+    }
+    .main-login .hoster p{
+        font-size: 1rem;
+    
+    }
+    .main-login .support{
+        line-height: 30px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .copyright{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen   and (max-width:500px) {
+    .main-login .fastlogin{
+        width: 100%;
+        max-width: 300px;
+    }
+    .main-login .fastlogin .form .check{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+    }
+    .main-login .hoster{
+        width: 100%;
+
+    }
+    .main-login .hoster p{
+        font-size: 1rem;
+    
+    }
+    .main-login .support{
+        line-height: 30px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .copyright{
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+}
